@@ -87,7 +87,7 @@ spec:
               topologyKey: "kubernetes.io/hostname"
       containers:
       - name: kubernetes-zookeeper
-        imagePullPolicy: Always
+        imagePullPolicy: IfNotPresent
         image: fastop/zookeeper:3.4.10
         resources:
           requests:
